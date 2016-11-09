@@ -221,6 +221,18 @@ site/templates/about/fields/input/
 site/templates/about/fields/textarea/
 ```
 
+### 6. Load custom files
+
+With every brick a root file will be loaded if it exists. From that file you can include additional files that is not encounted for.
+
+**Example**
+
+```text
+site/templates/about/about.php
+```
+
+From within that file you can include or register set whatever you want.
+
 ## Options
 
 The following option can be set in your `/site/config/config.php` file:
