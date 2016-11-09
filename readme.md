@@ -90,12 +90,6 @@ If you already have template files there from the "old" structure, they will con
 
 For example, if there is a `default.php` and some template in the new structure is missing, it will run instead.
 
-### Change `bricks` to `templates`
-
-```php
-c::set('plugin.bricks.register', array('controller'));
-```
-
 ## Usage
 
 Because I recommend to use `templates` instead of `bricks` (see setup), I will use `templates` in these examples.
