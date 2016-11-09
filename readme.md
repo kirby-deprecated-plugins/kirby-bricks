@@ -86,6 +86,10 @@ $kirby->roots->bricks = $kirby->roots()->templates();
 
 Now all the bricks should be placed into `templates`.
 
+If you already have template files there from the "old" structure, they will continue to work.
+
+For example, if there is a `default.php` and some template in the new structure is missing, it will run instead.
+
 ### Change `bricks` to `templates`
 
 ```php
