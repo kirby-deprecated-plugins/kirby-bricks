@@ -1,0 +1,7 @@
+{
+  "name": "kirby-bricks",
+  "version": "0.1",
+  "description": "Group your files into modules - Plugin for Kirby CMS",
+  "license": "MIT",
+  "type": "kirby-plugin",
+}
