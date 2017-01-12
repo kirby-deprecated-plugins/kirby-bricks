@@ -1,52 +1,33 @@
-# Kirby Bricks
+![](docs/logo.png)
 
-***New version is coming soon***
+*[Download the OLD version 0.1](https://github.com/jenstornell/kirby-bricks/tree/Version-0.1)*
 
-In the meantime, download the old one here:
+**Version:** 2.0
 
-https://github.com/jenstornell/kirby-bricks/tree/Version-0.1
+Bricks was created to bundle things together in a modular approach, similar to the [Patterns plugin](https://github.com/getkirby-plugins/patterns-plugin). The result is less folder jumping, because everything releated to the current brick is in the same folder.
 
-## Installation
+It also have features like [snippet controller](docs/snippet-controller.md), [autoload](docs/load.md) and [Module](docs/module.md) plugin support.
 
-Use one of the alternatives below.
+### Example 1 - Brick including a [template](docs/template.md)
 
-### 1. Kirby CLI
+`site/bricks/about/`:
 
-If you are using the [Kirby CLI](https://github.com/getkirby/cli) you can install this plugin by running the following commands in your shell:
-
-```
-$ cd path/to/kirby
-$ kirby plugin:install jenstornell/kirby-bricks
-```
-
-### 2. Clone or download
-
-1. [Clone](https://github.com/jenstornell/kirby-bricks.git) or [download](https://github.com/jenstornell/kirby-bricks/archive/master.zip)  this repository.
-2. Unzip the archive if needed and rename the folder to `kirby-bricks`.
-
-**Make sure that the plugin folder structure looks like this:**
-
-```
-site/plugins/kirby-bricks/
+```text
+blueprint.yml
+controller.php
+load.php
+template.php
 ```
 
-### 3. Git Submodule
+### Example 2 - Brick including a [snippet](docs/snippet.md)
 
-If you know your way around Git, you can download this plugin as a submodule:
+`site/bricks/header/`:
 
+```text
+controller.php
+load.php
+snippet.php
 ```
-$ cd path/to/kirby
-$ git submodule add https://github.com/jenstornell/kirby-bricks site/plugins/kirby-bricks
-```
-
-**Docs**
-
-- https://getkirby.com/docs/templates/snippets
-- https://getkirby.com/docs/templates/hello-world
-- https://getkirby.com/docs/panel/blueprints
-- https://getkirby.com/docs/developer-guide/advanced/controllers
-
-I will use `about` as template in examples in the next steps.
 
 ### 6. Load custom files
 
@@ -54,51 +35,39 @@ With every brick a root file will be loaded if it exists. From that file you can
 
 From within that file you can include or register set whatever you want.
 
-## Options
+## Table of Contents
 
-The following option can be set in your `/site/config/config.php` file:
+**Install**
 
-```php
-c::set('plugin.bricks.register', array(
-  'blueprint',
-  'controller',
-  'snippet',
-  'template',
-));
-```
+1. [Install](docs/install.md)
 
-### register
+**Usage**
 
-If you are concerned about speed and don't want the plugin to look for all the files and folders you can use this option to only select which types to include.
+- [Template, blueprint & controller](docs/template.md)
+- [Snippet](docs/snippet.md)
+- [Snippet controller](docs/snippet-controller.md)
+- [Load](docs/load.md)
+- [Assets](docs/assets.md)
+- [Module](docs/module.md)
 
-By default everything above is included.
+**Optional**
 
-## Common errors
+- [Options](docs/options.md)
 
-If you get out of memory it probably depends that Kirby can't find a template. Make sure you have a template that is loaded correctly.
+**Other stuff**
 
-https://github.com/getkirby/kirby/issues/512
-
-## Changelog
-
-**0.1**
-
-- Initial release
+- [Troubleshooting](docs/troubleshooting.md)
+- [Changelog](docs/changelog.md)
+- [License - MIT](docs/license.md)
+- [Disclaimer](docs/disclaimer.md)
 
 ## Requirements
 
 - [**Kirby**](https://getkirby.com/) 2.4+
 
-## Disclaimer
-
-This plugin is provided "as is" with no guarantee. Use it at your own risk and always test it yourself before using it in a production environment. If you find any issues, please [create a new issue](https://github.com/jenstornell/kirby-bricks/issues/new).
-
-## License
-
-[MIT](https://opensource.org/licenses/MIT)
-
-It is discouraged to use this plugin in any project that promotes racism, sexism, homophobia, animal abuse, violence or any other form of hate speech.
-
 ## Credits
 
 - [Jens Törnell](https://github.com/jenstornell)
+- [Christian Zehetner](https://github.com/seehat) - For providing an asset route solution.
+- [Lukas Bestle](https://github.com/seehat) - For creating the [Module](https://github.com/getkirby-plugins/modules-plugin) plugin with support for register a module.
+- [Lukas Bestle](https://github.com/seehat) - For creating the [Patterns](https://github.com/bastianallgeier) plugin which was an inspiration source for Bricks.
