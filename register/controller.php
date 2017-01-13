@@ -1,14 +1,12 @@
 <?php
 namespace JensTornell\Bricks;
-use JensTornell\Bricks as Bricks;
-use c;
 
 class Controller {
 	function register($paths = array()) {
 		global $kirby;
 		$this->kirby = $kirby;
 		$this->paths = $this->paths( $paths );
-		$this->name = new Bricks\Name();
+		$this->name = new Name();
 
 		$this->set();
 	}

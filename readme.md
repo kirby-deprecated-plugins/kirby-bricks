@@ -37,8 +37,6 @@ snippet.php
 
 ## Table of Contents
 
-**Install**
-
 1. [Install](docs/install.md)
 1. Usage
   1. [Template Blueprint Controller](docs/template.md)
@@ -47,17 +45,11 @@ snippet.php
   1. [Load](docs/load.md)
   1. [Assets](docs/assets.md)
   1. [Module](docs/module.md)
-
-**Optional**
-
-- [Options](docs/options.md)
-
-**Other stuff**
-
-- [Troubleshooting](docs/troubleshooting.md)
-- [Changelog](docs/changelog.md)
-- [License - MIT](docs/license.md)
-- [Disclaimer](docs/disclaimer.md)
+1. [Options](docs/options.md)
+1. [Troubleshooting](docs/troubleshooting.md)
+1. [Changelog](docs/changelog.md)
+1. [License - MIT](docs/license.md)
+1. [Disclaimer](docs/disclaimer.md)
 
 ## Requirements
 
@@ -65,7 +57,8 @@ snippet.php
 
 ## Credits
 
-- [Jens Törnell](https://github.com/jenstornell)
-- [Christian Zehetner](https://github.com/seehat) - For providing an asset route solution.
+- [Jens Törnell](https://github.com/jenstornell) - Author
+- [Christian Zehetner](https://github.com/seehat) - For providing a nice assets route solution.
+- [Pedro Borges](https://github.com/pedroborges) and [Sonja Broda](https://github.com/texnixe) for help on improving my namespaces.
 - [Lukas Bestle](https://github.com/seehat) - For creating the [Module](https://github.com/getkirby-plugins/modules-plugin) plugin with support for register a module.
 - [Bastian Allgeier](https://github.com/bastianallgeier) - For creating the [Patterns](https://github.com/getkirby-plugins/patterns-plugin) plugin which was an inspiration source for Bricks.

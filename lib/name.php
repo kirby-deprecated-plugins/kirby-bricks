@@ -1,12 +1,8 @@
 <?php
 namespace JensTornell\Bricks;
-use JensTornell\Bricks as Bricks;
 use c;
 
 class Name {
-	function __construct() {
-		$this->register = new Bricks\Register();
-	}
 	function get($path) {
 		return $this->folder($path);
 	}
@@ -16,7 +12,7 @@ class Name {
 		$name = strtr(
 			$name,
 			array(
-				$this->register->root() . DS => '',
+				root() . DS => '',
 				DS => '/'
 			)
 		);

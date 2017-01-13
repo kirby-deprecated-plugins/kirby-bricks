@@ -1,7 +1,5 @@
 <?php
 namespace JensTornell\Bricks;
-use JensTornell\Bricks as Bricks;
-use c;
 
 class Load {
 	function register($paths = array()) {

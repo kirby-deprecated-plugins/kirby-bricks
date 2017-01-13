@@ -1,6 +1,5 @@
 <?php
 namespace JensTornell\Bricks;
-use JensTornell\Bricks as Bricks;
 
 class Plugins {
 	public function load() {

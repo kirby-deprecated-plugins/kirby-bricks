@@ -1,6 +1,5 @@
 <?php
 namespace JensTornell\Bricks;
-use JensTornell\Bricks as Bricks;
 use str;
 
 class Module {
@@ -9,7 +8,7 @@ class Module {
 			global $kirby;
 			$this->kirby = $kirby;
 			$this->paths = $this->paths( $paths );
-			$this->name = new Bricks\Name();
+			$this->name = new Name();
 
 			$this->set();
 		}
