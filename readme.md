@@ -1,4 +1,4 @@
-![](docs/logo.png)
+![Kirby Bricks](docs/logo.png)
 
 *[Download the OLD version 0.1](https://github.com/jenstornell/kirby-bricks/tree/Version-0.1)*
 
@@ -8,47 +8,45 @@ Bricks was created to bundle things together in a modular approach, similar to t
 
 It also have features like [snippet controller](docs/snippet-controller.md), [autoload](docs/load.md) and [Module](docs/module.md) plugin support.
 
-### Example 1 - Brick including a [template](docs/template.md)
+### Brick with a [template](docs/template.md)
 
-`site/bricks/about/`:
+Example of `site/bricks/about/`:
 
 ```text
 blueprint.yml
 controller.php
+image.svg
 load.php
+script.js
+style.scss
 template.php
 ```
 
-### Example 2 - Brick including a [snippet](docs/snippet.md)
+### Brick with a [snippet](docs/snippet.md)
 
-`site/bricks/header/`:
+Example of `site/bricks/header/`:
 
 ```text
 controller.php
+image.svg
 load.php
+script.js
+style.scss
 snippet.php
 ```
-
-### 6. Load custom files
-
-With every brick a root file will be loaded if it exists. From that file you can include additional files that is not encounted for.
-
-From within that file you can include or register set whatever you want.
 
 ## Table of Contents
 
 **Install**
 
 1. [Install](docs/install.md)
-
-**Usage**
-
-- [Template, blueprint & controller](docs/template.md)
-- [Snippet](docs/snippet.md)
-- [Snippet controller](docs/snippet-controller.md)
-- [Load](docs/load.md)
-- [Assets](docs/assets.md)
-- [Module](docs/module.md)
+1. Usage
+  1. [Template Blueprint Controller](docs/template.md)
+  1. [Snippet](docs/snippet.md)
+  1. [Snippet controller](docs/snippet-controller.md)
+  1. [Load](docs/load.md)
+  1. [Assets](docs/assets.md)
+  1. [Module](docs/module.md)
 
 **Optional**
 
@@ -70,4 +68,4 @@ From within that file you can include or register set whatever you want.
 - [Jens Törnell](https://github.com/jenstornell)
 - [Christian Zehetner](https://github.com/seehat) - For providing an asset route solution.
 - [Lukas Bestle](https://github.com/seehat) - For creating the [Module](https://github.com/getkirby-plugins/modules-plugin) plugin with support for register a module.
-- [Lukas Bestle](https://github.com/seehat) - For creating the [Patterns](https://github.com/bastianallgeier) plugin which was an inspiration source for Bricks.
+- [Bastian Allgeier](https://github.com/bastianallgeier) - For creating the [Patterns](https://github.com/getkirby-plugins/patterns-plugin) plugin which was an inspiration source for Bricks.
