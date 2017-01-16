@@ -1,4 +1,4 @@
-![Kirby Bricks](docs/logo.png)
+# Kirby Bricks
 
 *[Download the OLD version 0.1](https://github.com/jenstornell/kirby-bricks/tree/Version-0.1)*
 
@@ -15,10 +15,7 @@ Example of `site/bricks/about/`:
 ```text
 blueprint.yml
 controller.php
-image.svg
-load.php
-script.js
-style.scss
+model.php
 template.php
 ```
 
@@ -28,11 +25,8 @@ Example of `site/bricks/header/`:
 
 ```text
 controller.php
-image.svg
-load.php
-script.js
-style.scss
 snippet.php
+style.scss
 ```
 
 ## Table of Contents

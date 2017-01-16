@@ -3,6 +3,7 @@ namespace JensTornell\Bricks;
 
 class Model {
 	function register($paths = array()) {
+		$this->name = new Name();
 		$this->paths = $this->paths( $paths );
 		$this->set();
 	}
@@ -19,8 +20,13 @@ class Model {
 	}
 
 	function set() {
+		global $kirby;
 		foreach( $this->paths as $path ) {
-			include $path;
+			require_once $path;
+
+			$modelname = $this->name->get($path);
+			$classname = ucfirst($modelname) . 'Page';
+			$kirby->set('page::model', $modelname, $classname);
 		}
 	}
 }

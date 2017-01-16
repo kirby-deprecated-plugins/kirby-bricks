@@ -10,7 +10,7 @@ class Register {
 	public function register() {
 		foreach( types() as $type ) {
 			if( $type == 'snippet-controller') continue;
-			include_once dirname(__DIR__) . DS . 'register' . DS . $type . '.php';
+			require_once dirname(__DIR__) . DS . 'register' . DS . $type . '.php';
 
 			$class = __NAMESPACE__  . '\\' . ucfirst($type);
 			$this->{$type} = new $class;

@@ -6,6 +6,7 @@ function types() {
 		'blueprint',
 		'controller',
 		'load',
+		'model',
 		'module',
 		'snippet',
 		'snippet-controller',

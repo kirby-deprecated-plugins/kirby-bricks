@@ -20,7 +20,7 @@ class Load {
 
 	function set() {
 		foreach( $this->paths as $path ) {
-			include $path;
+			require_once $path;
 		}
 	}
 }
