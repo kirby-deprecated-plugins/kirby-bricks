@@ -6,4 +6,4 @@ Read all about it [here](differences.md).
 
 **0.1**
 
-Initial release
+Initial release. [Download version 0.1](https://github.com/jenstornell/kirby-bricks/tree/Version-0.1).

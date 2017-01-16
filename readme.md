@@ -1,53 +1,26 @@
 # Kirby Bricks
 
-*[Download the OLD version 0.1](https://github.com/jenstornell/kirby-bricks/tree/Version-0.1)*
+*Version: 2.0 - [Changelog](docs/changelog.md)*
 
-**Version:** 2.0
+Create your site with a modular approach. Bundle files together as bricks. Because the bricks is in one place, there are less jumping around between folders.
 
-Bricks was created to bundle things together in a modular approach, similar to the [Patterns plugin](https://github.com/getkirby-plugins/patterns-plugin). The result is less folder jumping, because everything releated to the current brick is in the same folder.
+## Example
 
-It also have features like [snippet controller](docs/snippet-controller.md), [autoload](docs/load.md) and [Module](docs/module.md) plugin support.
+*Not every possible file type is included in the example below*
 
-### Brick with a [template](docs/template.md)
-
-Example of `site/bricks/about/`:
-
-```text
-blueprint.yml
-controller.php
-model.php
-template.php
-```
-
-### Brick with a [snippet](docs/snippet.md)
-
-Example of `site/bricks/header/`:
-
-```text
-controller.php
-snippet.php
-style.scss
-```
+![Screenshot](docs/screenshot1.png)
 
 ## Table of Contents
 
 1. [Install](docs/install.md)
-1. Usage
-  1. [Template Blueprint Controller](docs/template.md)
-  1. [Snippet](docs/snippet.md)
-  1. [Snippet controller](docs/snippet-controller.md)
-  1. [Load](docs/load.md)
-  1. [Assets](docs/assets.md)
-  1. [Module](docs/module.md)
-1. [Options](docs/options.md)
-1. [Troubleshooting](docs/troubleshooting.md)
-1. [Changelog](docs/changelog.md)
-1. [License - MIT](docs/license.md)
-1. [Disclaimer](docs/disclaimer.md)
+1. [Folders](docs/folders.md) 
+1. [Files](docs/files.md)
 
-## Requirements
+## In short
 
-- [**Kirby**](https://getkirby.com/) 2.4+
+- **Requirement** - [Kirby](https://getkirby.com/) 2.4+
+- **License**: https://opensource.org/licenses/MIT
+- **Disclaimer**: Use it at your own risk
 
 ## Credits
 
