@@ -38,7 +38,7 @@ If `load.php` is present it will autoload this file automatically before the pag
 
 ## Other files
 
-- [Assets](docs/assets.md) - Unsupported files like `image.jpg`
+- [Assets](assets.md) - Unsupported files like `image.jpg`
 - [`blueprint.yml`](https://getkirby.com/docs/panel/blueprints)
 - [`controller.php`](snippet-controller.md) `snippet.php` + `controller.php`
 - [`controller.php`](https://getkirby.com/docs/developer-guide/advanced/controllers) `template.php` + `controller.php`
