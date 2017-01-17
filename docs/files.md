@@ -1,12 +1,12 @@
-# Types
+# Files
 
 Every brick will try to register supported file types automatically.
 
 **Example brick path:** `site/bricks/about/`
 
-## Files
+## Types
 
-**Most supported file names** should match exactly:
+**The file names below** should match exactly:
 
 ```text
 blueprint.yml

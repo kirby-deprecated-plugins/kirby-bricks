@@ -3,11 +3,7 @@ namespace JensTornell\Bricks;
 use c;
 
 class Name {
-	function get($path) {
-		return $this->folder($path);
-	}
-
-	function folder($path) {
+	function byPath($path) {
 		$name = dirname($path);
 		$name = strtr(
 			$name,
@@ -16,20 +12,19 @@ class Name {
 				DS => '/'
 			)
 		);
-		return $this->unPrefix($name);
+		return $this->byFolder($name);
 	}
 
-	function unPrefix($name) {
+	function byFolder($name) {
 		$prefixes = c::get('plugin.bricks.remove.prefix');
 
 		if( is_array( $prefixes ) ) {
 			foreach( $prefixes as $prefix ) {
 				$name = $this->removeFromStart($prefix, $name);
 			}
-		} else {
-			$name = $this->removeFromStart($prefixes, $name);
+			return $name;
 		}
-		return $name;
+		return $this->removeFromStart($prefixes, $name);
 	}
 
 	function removeFromStart($prefix, $str) {

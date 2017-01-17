@@ -1,32 +1,19 @@
 <?php
 namespace JensTornell\Bricks;
 
-class Controller {
-	function register($paths = array()) {
-		global $kirby;
-		$this->kirby = $kirby;
-		$this->paths = $this->paths( $paths );
-		$this->name = new Name();
-
-		$this->set();
-	}
+class Controller extends Base{
+	public $name = 'controller';
 
 	function paths( $paths = array() ) {
 		$controller = array();
 		if( ! empty( $paths ) ) {
 			foreach( $paths as $path ) {
-				if( basename($path) != 'controller.php') continue;
+				if( basename($path) != $this->name . '.' . $this->extension) continue;
 				if( ! file_exists( dirname($path) . DS . 'template.php' ) ) continue;
 
 				$controller[] = $path;
 			}
 		}
 		return $controller;
-	}
-
-	function set() {
-		foreach( $this->paths as $path ) {
-			$this->kirby->set('controller', $this->name->get( $path ), $path );
-		}
 	}
 }

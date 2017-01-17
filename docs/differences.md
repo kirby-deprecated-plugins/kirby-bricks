@@ -39,6 +39,7 @@ Version 2.0 are just focusing on the important stuff and leave the rest behind:
 blueprint
 controller
 load
+model
 module
 snippet
 template

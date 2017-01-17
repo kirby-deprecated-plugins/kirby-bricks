@@ -10,6 +10,8 @@ class Register {
 	public function register() {
 		foreach( types() as $type ) {
 			if( $type == 'snippet-controller') continue;
+			if( $type == 'module' && ! kirby()->plugin('modules') ) continue;
+			
 			require_once dirname(__DIR__) . DS . 'register' . DS . $type . '.php';
 
 			$class = __NAMESPACE__  . '\\' . ucfirst($type);

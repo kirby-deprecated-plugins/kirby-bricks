@@ -2,17 +2,8 @@
 namespace JensTornell\Bricks;
 use str;
 
-class Module {
-	function register($paths = array()) {
-		if( kirby()->plugin('modules') ) {
-			global $kirby;
-			$this->kirby = $kirby;
-			$this->paths = $this->paths( $paths );
-			$this->name = new Name();
-
-			$this->set();
-		}
-	}
+class Module extends Base {
+	public $name = 'module';
 
 	function paths( $paths = array() ) {
 		$filepaths = array();
@@ -27,7 +18,7 @@ class Module {
 
 	function set() {
 		foreach( $this->paths as $path ) {
-			$this->kirby->set('module', $this->name->get( $path ), dirname($path) );
+			$this->kirby->set('module', $this->Name->byPath( $path ), dirname($path) );
 		}
 	}
 }
