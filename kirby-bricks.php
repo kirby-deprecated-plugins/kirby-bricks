@@ -3,6 +3,7 @@ namespace JensTornell\Bricks;
 
 require_once __DIR__ . DS . 'lib' . DS . 'root.php';
 require_once __DIR__ . DS . 'lib' . DS . 'types.php';
+require_once __DIR__ . DS . 'lib' . DS . 'registry.php';
 require_once __DIR__ . DS . 'lib' . DS . 'register.php';
 require_once __DIR__ . DS . 'lib' . DS . 'plugins.php';
 require_once __DIR__ . DS . 'lib' . DS . 'name.php';
@@ -17,5 +18,6 @@ $SnippetController = new SnippetController();
 
 $routes->set();
 $plugins->load();
+
 $register->set();
 $SnippetController->set();

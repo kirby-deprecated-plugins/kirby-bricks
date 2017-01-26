@@ -1,6 +1,6 @@
 # Kirby Bricks
 
-*Version: 2.0 - [Changelog](docs/changelog.md)*
+*Version: 2.1 - [Changelog](docs/changelog.md)*
 
 Create your site with a modular approach. Bundle files together as bricks. Because the bricks is in one place, there are less jumping around between folders.
 
@@ -15,6 +15,7 @@ Create your site with a modular approach. Bundle files together as bricks. Becau
 1. [Install](docs/install.md)
 1. [Folders](docs/folders.md) 
 1. [Files](docs/files.md)
+1. [Extension registry](docs/registry.md)
 
 ## In short
 

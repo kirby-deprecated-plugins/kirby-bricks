@@ -1,5 +1,10 @@
 # Changelog
 
+**2.1**
+
+- [Extension registry support](docs/registry.md)
+- Bugfixes
+
 **2.0**
 
 Read all about it [here](differences.md).

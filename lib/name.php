@@ -5,13 +5,7 @@ use c;
 class Name {
 	function byPath($path) {
 		$name = dirname($path);
-		$name = strtr(
-			$name,
-			array(
-				root() . DS => '',
-				DS => '/'
-			)
-		);
+		$name = basename($name);
 		return $this->byFolder($name);
 	}
 
