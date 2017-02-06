@@ -6,7 +6,6 @@ class Name {
 	function byPath($path) {
 		$path = $this->removeRoot($path);
 		$name = dirname($path);
-
 		return $this->byFolder($name);
 	}
 
@@ -15,8 +14,6 @@ class Name {
 	}
 
 	function byFolder($name) {
-		$prefixes = c::get('plugin.bricks.remove.prefix');
-
 		$explode = explode(DS, $name);
 		$output = '';
 		foreach($explode as $item) {
@@ -31,10 +28,12 @@ class Name {
 		$prefixes = c::get('plugin.bricks.remove.prefix');
 		if( is_array( $prefixes ) ) {
 			foreach( $prefixes as $prefix ) {
-				return $this->removeFromStart($prefix, $name);
+				$name = $this->removeFromStart($prefix, $name);
 			}
+		} else {
+			$name = $this->removeFromStart($prefixes, $name);
 		}
-		return $this->removeFromStart($prefixes, $name);
+		return $name;
 	}
 
 	function removeFromStart($prefix, $str) {
