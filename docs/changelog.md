@@ -4,6 +4,7 @@
 
 - Changed the option "Disable file types" to enable file types instead
 - Improved snippet nesting
+- Added support for Bricks UI
 - Testing and minor bug fixes
 
 **2.1**
