@@ -1,5 +1,6 @@
 <?php
 namespace JensTornell\Bricks;
+use c;
 
 function types() {
 	$defaults = array(
@@ -13,6 +14,5 @@ function types() {
 		'template',
 	);
 
-	$types = \c::get('plugin.bricks.register', $defaults);
-	return array_intersect( $types, $defaults );
+	return c::get('plugin.bricks.register', $defaults);
 }

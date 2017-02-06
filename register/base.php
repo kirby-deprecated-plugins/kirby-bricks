@@ -14,6 +14,7 @@ class Base {
 	}
 
 	function paths( $paths = array() ) {
+		$filepaths = array();
 		if( ! empty( $paths ) ) {
 			foreach( $paths as $path ) {
 				if( basename($path) != $this->name . '.' . $this->extension) continue;

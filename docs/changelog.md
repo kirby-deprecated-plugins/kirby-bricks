@@ -1,5 +1,11 @@
 # Changelog
 
+**2.2**
+
+- Changed the option "Disable file types" to enable file types instead
+- Improved snippet nesting
+- Testing and minor bug fixes
+
 **2.1**
 
 - [Extension registry support](docs/registry.md)

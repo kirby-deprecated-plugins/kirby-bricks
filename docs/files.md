@@ -36,6 +36,11 @@ style.scss
 
 If `load.php` is present it will autoload this file automatically before the page is rendered. Use it for things like functions, classes, include other files or register unsupported file types.
 
+## Snippet controller
+
+Kirby does not have snippet controllers but Bricks supports it. Read more about
+[Snippet Controllers](snippet-controller.md).
+
 ## Other files
 
 - [Assets](assets.md) - Unsupported files like `image.jpg`
@@ -46,7 +51,7 @@ If `load.php` is present it will autoload this file automatically before the pag
 - [`snippet.php`](https://getkirby.com/docs/templates/snippets)
 - [`template`](https://getkirby.com/docs/templates/hello-world)
 
-## Disable file types 
+## Enable file types
 
 As default it will try to register all supported file types, but you can choose to only allow some of them:
 
@@ -58,6 +63,7 @@ c::set('plugin.bricks.register', array(
   'model',
   'module',
   'snippet',
+  'snippet-controller',
   'template'
 ));
 ```

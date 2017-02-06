@@ -24,6 +24,11 @@ class Register {
 	// Return file paths
 	function paths() {
 		$paths = array();
+
+		if(!file_exists(root())) {
+			die('The bricks folder could not be found');
+		}
+
 		$iterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator(root()),
 			\RecursiveIteratorIterator::SELF_FIRST
 		);

@@ -1,6 +1,6 @@
 {
   "name": "kirby-bricks",
-  "version": "2.1",
+  "version": "2.2",
   "description": "Bundle things together in a modular approach - Plugin for Kirby CMS",
   "license": "MIT",
   "type": "kirby-plugin",

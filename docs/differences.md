@@ -45,7 +45,7 @@ snippet
 template
 ```
 
-New stuff in this is `load`, `module` and `controller` (in a way).
+New stuff in this is `load`, `module` and `controller`.
 
 ## Load
 

@@ -45,7 +45,7 @@ template-home
 It will require to use this config in `config.php`:
 
 ```php
-c::get('plugin.bricks.remove.prefix', ['module-', 'snippet-', 'template-']);
+c::set('plugin.bricks.remove.prefix', ['module-', 'snippet-', 'template-']);
 ```
 
 It will remove the prefixes from the calls so you can still use this:
@@ -70,7 +70,7 @@ tpl-home
 It will require to use this config in `config.php`:
 
 ```php
-c::get('plugin.bricks.remove.prefix', ['mod-', 'spt-', 'tpl-']);
+c::set('plugin.bricks.remove.prefix', ['mod-', 'spt-', 'tpl-']);
 ```
 
 It will remove the prefixes from the calls so you can still use this:
