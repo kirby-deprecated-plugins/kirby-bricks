@@ -1,16 +1,34 @@
 <?php
 namespace JensTornell\Bricks;
 use c;
+use str;
 
 class Name {
+	public $prefix_ui = '';
+
 	function byPath($path) {
+		$this->prefixUi($path);
 		$path = $this->removeRoot($path);
 		$name = dirname($path);
 		return $this->byFolder($name);
 	}
 
 	function removeRoot($path) {
-		return str_replace(root() . DS, '', $path);
+		$path = strtr($path,
+			array(
+				root() . DS => '',
+				kirby()->roots()->plugins() . DS . 'kirby-bricks-ui' . DS . 'bricks' . DS => $this->prefix_ui
+			)
+		);
+
+		return $path;
+	}
+
+	function prefixUi($path) {
+		$ui_path = kirby()->roots()->plugins() . DS . 'kirby-bricks-ui' . DS . 'bricks' . DS;
+		if(str::startsWith($path, $ui_path)) {
+			$this->prefix_ui = 'bricks-ui-';
+		}
 	}
 
 	function byFolder($name) {
